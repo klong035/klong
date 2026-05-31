@@ -14,7 +14,7 @@
 }
 
 body {
-  font-family: 'JetBrains Mono', ui-monospace, Menlo, monospace;
+  font-family: "JetBrains Mono", ui-monospace, Menlo, monospace;
   background: var(--bg);
   color: var(--ink);
   font-size: 14px;
@@ -82,7 +82,9 @@ a:hover {
   border: 1px solid var(--ink);
   padding: 32px;
   background: var(--bg);
-  transition: background 0.15s, color 0.15s;
+  transition:
+    background 0.15s,
+    color 0.15s;
 }
 
 .featured-card:hover {
@@ -203,23 +205,22 @@ a:hover {
   max-width: 640px;
 }
 
-.headerContent{
-    grid-column: 1;
-    grid-row: 2;
+.headerContent {
+  grid-column: 1;
+  grid-row: 2;
 }
-.header-annotation{
-    grid-column: 2;
-    grid-row: 2;
-    min-height: 300px;
-    border: 1px dashed var(--rule);
+.header-annotation {
+  grid-column: 2;
+  grid-row: 2;
+  min-height: 300px;
+  border: 1px dashed var(--rule);
 }
 /* ========== video ========== */
 
-.video{
+.video {
   margin-bottom: 80px;
   text-align: center;
 }
-
 
 /* ========== DEVICE GRID (FYP PAGE) ========== */
 .devices {
@@ -366,10 +367,13 @@ a:hover {
   text-decoration-color: #ff6b35; /* red/orange */
   text-decoration-thickness: 3px;
   cursor: pointer;
+  &:hover {
+    color: #4511ff;
+  }
 }
 
 .note {
-  padding: 16px;;
+  padding: 16px;
   border: 1px solid var(--rule);
   font-size: 12px;
   line-height: 1.6;
@@ -384,8 +388,6 @@ a:hover {
   margin-top: 1px; /* Adjust based on where text is */
 }
 
-
-
 .note-label {
   font-size: 10px;
   text-transform: uppercase;
@@ -398,8 +400,6 @@ a:hover {
 .note p {
   margin: 0;
 }
-
-
 
 /* ========== FOOTER ========== */
 footer {
